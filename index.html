@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Number Facts Generator</title>
+    <!-- SEO -->
+    <meta name="description" content="Number Facts Generator">
+    <meta name="keywords" content="JavaScript, jQuery, CSS, API, Numbers, Web App">
+    <meta name="author" content="Bob Dempsey">
+    <!-- Favicon -->
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="light-blue-skin">
+
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+            <a class="navbar-brand" href="https://bobd.me/apps/number-facts/index.html">
+                <strong>Number Facts Generator - Bob Dempsey</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bobd.me/">
+                            <i class="fa fa-arrow-left"></i> BobD.Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bobd.me/apps/">
+                            <i class="fa fa-th"></i> Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bobd.me/apps/number-facts/subscribe.html">
+                            <i class="fa fa-bell"></i> Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://bobd.me/apps/number-facts/contact.html">
+                            <i class="fa fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Main Navigation-->
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!--Jumbotron-->
+            <div class="jumbotron text-center grey lighten-4">
+                <!--Title-->
+                <h1 class="card-title h1-responsive font-bold mt-3">
+                    <strong>Number Facts Generator</strong>
+                </h1>
+                <!--Subtitle-->
+                <p class="pt-2 font-bold indigo-text">
+                    <strong>Generate a Random Fact About Any Number</strong>
+                </p>
+                <div class="row align-items-center justify-content-center mt-3">
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <p class="card-text my-3" style="max-width: 43rem;">This web application uses JavaScript to search the Numbers public fetch API
+                        </p>
+                        <!-- Material Input / Search Form-->
+                        <form id="searchForm" class="md-form mt-5">
+                            <input type="number" id="numberInput" class="form-control form-control-lg">
+                            <label for="numberInput">Search Any Number</label>
+                    </div>
+                    </form>
+                </div>
+                <!--Grid column-->
+
+                <!-- Number facts output  -->
+                <div class="row justify-content-center mt-5 pt-1">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="card card-body text-left" id="fact">
+                            <button type="button" class="close" aria-label="Close" id="factCloseBtn">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="card-title">Fun Fact About the #
+                                <span id="specificNumber"></span>
+                            </h4>
+                            <!-- Fact outputs here -->
+                            <p class="card-text" id="factText"></p>
+                            <!-- Fact outputs here -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Number facts output -->
+            </div>
+            <!--Jumbotron-->
+        </div>
+        <!--Container-->
+
+        <!--Footer-->
+        <footer class="page-footer font-small mdb-color darken-2">
+            <!--Copyright-->
+            <div class="footer-copyright py-3 text-center">
+                © 2018
+                <a href="https://bobd.me/"> BobD.Me </a>
+            </div>
+            <!--/.Copyright-->
+        </footer>
+        <!--/.Footer-->
+    </main>
+    <!--Main Content-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Main App JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
